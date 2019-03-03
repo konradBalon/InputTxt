@@ -17,14 +17,8 @@ public class Main {
         haslo = randomWord.randomize();
 
         inputString = scanner.next();
-        if (haslo.contains(inputString))
-        {
-            System.out.println();
-            System.out.println(" haslo zawiera ta litere");
-        }
-        else {
-            System.out.println("sprobuj jeszcze raz");
-        }
+
+        System.out.println(randomWord.ifContains(inputString));
 
 
     }
